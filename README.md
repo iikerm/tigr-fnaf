@@ -1,8 +1,6 @@
 # Five Nights At Alfredo's
 
-This is a class project made by the 3 contributors of this repo.
-
-It is intended to be a parody of the game Five Nights At Freddy's
+This game is intended to be a parody of the game Five Nights At Freddy's
 
 In order to play, download the ZIP file for this branch and decompress it.
 This game will only run in Linux (Specifically tested in Ubuntu/LUbuntu)
