@@ -39,38 +39,17 @@ void tigrNight(int night){
 
     while (!tigrClosed(screen) && counter < 100){
         counter++;
-        tigrPrint(screen, tfont, ((screen->w)/2)-20, (screen->h)/2, lightGrey, text2);
+        tigrPrint(screen, tfont, ((screen->w)/2)-22, (screen->h)/2, lightGrey, text2);
         tigrUpdate(screen);
     }
     tigrClear(screen, tigrRGB(0, 0, 0));
     counter = 0;
     while (!tigrClosed(screen) && counter < 200){
         counter++;
-        tigrPrint(screen, tfont, ((screen->w)/2)-8, (screen->h)/2, lightGrey, text);
+        tigrPrint(screen, tfont, ((screen->w)/2)-14, (screen->h)/2, lightGrey, text);
         tigrUpdate(screen);
-    }
-    /*
-    counter = 0;
-    tigrFillRect(screen, -1, -1, screen->w+20, screen->h+20, tigrRGBA(0, 0, 0, 255));
-    while (!tigrClosed(screen) && counter < 50){
-        counter++;
-        
-        
-        tigrUpdate(screen);
-        
-        
     }
     
-    while (!tigrClosed(screen) && !tigrKeyDown(screen, TK_ESCAPE)){
-        counter++;
-        tigrPrint(screen, tfont, 10, (screen->h)-15, lightGrey, text);
-        
-        tigrUpdate(screen);
-        
-        
-    }
-    */
-
     tigrFree(screen);
 }
 
