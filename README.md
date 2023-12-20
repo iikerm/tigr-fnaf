@@ -1,5 +1,7 @@
 # tigr-fnaf
 
+This is a project made for fun / class project by the 3 contributors of this repo
+
 In order to play, download the ZIP file for this branch and decompress it.
 This game will only run in Linux (Specifically tested in Ubuntu/LUbuntu)
 
