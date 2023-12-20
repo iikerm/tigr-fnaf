@@ -1,4 +1,4 @@
-# tigr-fnaf
+# Five Nights At Alfredo's
 
 This is a project made for fun / class project by the 3 contributors of this repo
 
