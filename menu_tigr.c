@@ -311,13 +311,13 @@ int showHTP(Tigr *htpScreen){   // HTP stands for How To Play
         
         
 
-        if (tigrKeyDown(htpScreen, TK_DOWN) || tigrKeyDown(diffScreen, 'S')){
+        if (tigrKeyDown(htpScreen, TK_DOWN) || tigrKeyDown(htpScreen, 'S')){
             htpSelected += 1;
             if (htpSelected > 2){
                 htpSelected = 0;
             }
         }
-        if (tigrKeyDown(htpScreen, TK_UP) || tigrKeyDown(diffScreen, 'W')){
+        if (tigrKeyDown(htpScreen, TK_UP) || tigrKeyDown(htpScreen, 'W')){
             htpSelected -= 1;
             if (htpSelected < 0){
                 htpSelected = 2;
@@ -413,14 +413,14 @@ int mainMenu(Tigr *screen){
         reDraw(screen, sel);
         count++;
 
-        if (tigrKeyDown(screen, TK_DOWN) || tigrKeyDown(diffScreen, 'S')){  // code to switch between options using the down arrow
+        if (tigrKeyDown(screen, TK_DOWN) || tigrKeyDown(screen, 'S')){  // code to switch between options using the down arrow
             sel += 1;
             if (sel > 2){
                 sel = 0;
             }
         }
 
-        if (tigrKeyDown(screen, TK_UP) || tigrKeyDown(diffScreen, 'W')){    // code to switch between options using the up arrow
+        if (tigrKeyDown(screen, TK_UP) || tigrKeyDown(screen, 'W')){    // code to switch between options using the up arrow
             sel -= 1;
             if (sel < 0){
                 sel = 2;
@@ -517,10 +517,10 @@ int showAuthors(Tigr *screen){
             break;
         }
 
-        if (tigrKeyDown(screen, TK_DOWN) || tigrKeyDown(diffScreen, 'S')){
+        if (tigrKeyDown(screen, TK_DOWN) || tigrKeyDown(screen, 'S')){
             sel++;
         }
-        if (tigrKeyDown(screen, TK_UP) || tigrKeyDown(diffScreen, 'W')){
+        if (tigrKeyDown(screen, TK_UP) || tigrKeyDown(screen, 'W')){
             sel--;
         }
         if (sel>3){
