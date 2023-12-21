@@ -238,8 +238,6 @@ int main() {
 
     // Si ha habido un problema al principio del código se le habrá asignado valor 0 a la dificultad, cosa que
     // hará que se muestre un mensaje de error
-    } else {
-        printf("Critical error: The difficulty is not valid!\n");
     }
     remove("difficulty.txt");
     system("pkill -TSTP mpg123");
