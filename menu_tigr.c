@@ -201,14 +201,14 @@ int selectDifficulty(Tigr *diffScreen){
 
         tigrPrint(diffScreen, tfont, 10, 30, lightGrey, "Easy\nMedium\nHard");
 
-        if (tigrKeyDown(diffScreen, TK_DOWN)){  // code to switch between options using the down arrow
+        if (tigrKeyDown(diffScreen, TK_DOWN) || tigrKeyDown(diffScreen, 'S')){  // code to switch between options using the down arrow
             sel += 1;
             if (sel > 2){
                 sel = 0;
             }
         }
 
-        if (tigrKeyDown(diffScreen, TK_UP)){    // code to switch between options using the up arrow
+        if (tigrKeyDown(diffScreen, TK_UP) || tigrKeyDown(diffScreen, 'W')){    // code to switch between options using the up arrow
             sel -= 1;
             if (sel < 0){
                 sel = 2;
@@ -311,13 +311,13 @@ int showHTP(Tigr *htpScreen){   // HTP stands for How To Play
         
         
 
-        if (tigrKeyDown(htpScreen, TK_DOWN)){
+        if (tigrKeyDown(htpScreen, TK_DOWN) || tigrKeyDown(diffScreen, 'S')){
             htpSelected += 1;
             if (htpSelected > 2){
                 htpSelected = 0;
             }
         }
-        if (tigrKeyDown(htpScreen, TK_UP)){
+        if (tigrKeyDown(htpScreen, TK_UP) || tigrKeyDown(diffScreen, 'W')){
             htpSelected -= 1;
             if (htpSelected < 0){
                 htpSelected = 2;
@@ -413,14 +413,14 @@ int mainMenu(Tigr *screen){
         reDraw(screen, sel);
         count++;
 
-        if (tigrKeyDown(screen, TK_DOWN)){  // code to switch between options using the down arrow
+        if (tigrKeyDown(screen, TK_DOWN) || tigrKeyDown(diffScreen, 'S')){  // code to switch between options using the down arrow
             sel += 1;
             if (sel > 2){
                 sel = 0;
             }
         }
 
-        if (tigrKeyDown(screen, TK_UP)){    // code to switch between options using the up arrow
+        if (tigrKeyDown(screen, TK_UP) || tigrKeyDown(diffScreen, 'W')){    // code to switch between options using the up arrow
             sel -= 1;
             if (sel < 0){
                 sel = 2;
@@ -517,10 +517,10 @@ int showAuthors(Tigr *screen){
             break;
         }
 
-        if (tigrKeyDown(screen, TK_DOWN)){
+        if (tigrKeyDown(screen, TK_DOWN) || tigrKeyDown(diffScreen, 'S')){
             sel++;
         }
-        if (tigrKeyDown(screen, TK_UP)){
+        if (tigrKeyDown(screen, TK_UP) || tigrKeyDown(diffScreen, 'W')){
             sel--;
         }
         if (sel>3){
